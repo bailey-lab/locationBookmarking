@@ -19,7 +19,7 @@ _goToLoc()
     local opts cur
     COMPREPLY=()
     cur="${COMP_WORDS[COMP_CWORD]}"
-    opts=$(cat $HOME/.ohThePlacesIveBeen.txt | cut -d$'\t' -f1 | tail -n +2 )
+    opts=$(cat $LOCBOOKHOME/.ohThePlacesIveBeen.txt | cut -d$'\t' -f1 | tail -n +2 )
     COMPREPLY=($(compgen -W "${opts}" -- ${cur}))
     return 0
 }
