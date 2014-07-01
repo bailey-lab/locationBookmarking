@@ -5,7 +5,7 @@ Some convenience bash scripts to bookmark locations
 
 
 Define LOCBOOKMHOME and add to path
-export $LOCBOOKHOME/pathPrefixToLocationBookmrking/locationBookmarking
+export LOCBOOKHOME=/pathPrefixToLocationBookmrking/locationBookmarking
 export PATH='$PATH:$LOCBOOKHOME'
 
 And add this alias to your $HOME/.bash_aliases file or wherever you keep your aliases 
