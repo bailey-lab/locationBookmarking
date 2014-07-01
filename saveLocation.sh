@@ -12,7 +12,7 @@ if [ ! -e $LOCBOOKHOME/.ohThePlacesIveBeen.txt ]; then
 fi
 
 # Check to see if bookmark name has already been used
-check=$(egrep '^$1\>' $LOCBOOKHOME/.ohThePlacesIveBeen.txt)
+check=$(egrep "^$1\>" $LOCBOOKHOME/.ohThePlacesIveBeen.txt)
 if [ -n "$check" ]; then
     echo "Location Already Saved as "
     echo "$check"
