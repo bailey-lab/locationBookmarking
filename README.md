@@ -3,7 +3,7 @@ locationBookmarking
 
 Some convenience bash scripts to bookmark locations 
 
-
+<pre>
 Define LOCBOOKMHOME and add to path
 export LOCBOOKHOME=/pathPrefixToLocationBookmrking/locationBookmarking
 export PATH="$PATH:$LOCBOOKHOME"
@@ -25,3 +25,4 @@ _goToLoc()
 }
 
 complete -F _goToLoc goToLoc
+</pre>
