@@ -9,7 +9,7 @@ fi
 
 check=$(egrep "^$1\>" $LOCBOOKHOME/.ohThePlacesIveBeen.txt | cut -d$'\t' -f2)
 if [ -n "$check" ]; then
-    echo "$check"
+    cd $check
 else
 	echo "No bookmarked named $1"
 fi

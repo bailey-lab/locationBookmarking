@@ -10,7 +10,7 @@ export PATH="$PATH:$LOCBOOKHOME"
 
 And add this alias to your $HOME/.bash_aliases file or wherever you keep your aliases 
 
-alias goToLoc='source $LOCBOOKHOME/changeLocToBookmark.sh'
+alias goToLoc='source $LOCBOOKHOME/getLocation.sh'
 
 And add this bash completion to your $HOME/.bash_completion to add auto completion for bookmark names
 
