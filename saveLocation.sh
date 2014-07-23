@@ -18,4 +18,7 @@ if [ -n "$check" ]; then
     echo "$check"
 else
 	echo -e "$1\t$PWD" >>  $LOCBOOKHOME/.ohThePlacesIveBeen.txt
+  echo -e "LocName\tLocation" >  $LOCBOOKHOME/.ohThePlacesIveBeenTemp.txt
+  sed "1d" $LOCBOOKHOME/.ohThePlacesIveBeen.txt | sort >> $LOCBOOKHOME/.ohThePlacesIveBeenTemp.txt
+  mv $LOCBOOKHOME/.ohThePlacesIveBeenTemp.txt $LOCBOOKHOME/.ohThePlacesIveBeen.txt 
 fi
