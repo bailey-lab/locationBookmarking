@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 #First check to see if there is only one argument
 if [[ $# -ne 1 ]]; then
 	echo "\033[1;38;5;196mTakes only one argument, name for bookmark for current location"
