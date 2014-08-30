@@ -6,7 +6,6 @@ if [[ $# -ne 1 ]]; then
 	echo "eg. removeLocation.sh bookmarkName\033[0m"
 	exit
 fi
-
 # Check to see if bookmark name has already been used
 check=$(egrep "^$1\>" $LOCBOOKHOME/.ohThePlacesIveBeen.txt)
 if [ -n "$check" ]; then
