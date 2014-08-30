@@ -7,6 +7,7 @@ if [[ $# -ne 1 ]]; then
 	echo "eg. getLocation.sh bookmark\033[0m"
 	exit
 fi
+
 check=$(egrep "^$1\>" $LOCBOOKHOME/.ohThePlacesIveBeen.txt | cut -d$'\t' -f2)
 if [ -n "$check" ]; then
     echo $check
