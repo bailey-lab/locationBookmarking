@@ -2,8 +2,8 @@
 
 #First check to see if there is only one argument
 if [[ $# -ne 1 ]]; then
-	echo "\033[1;38;5;196mTakes only one argument, name for bookmark for the location to delete"
-	echo "eg. removeLocation.sh bookmarkName\033[0m"
+	echo -e "\033[1;38;5;196mTakes only one argument, name for bookmark for the location to delete"
+	echo -e "eg. removeLocation.sh bookmarkName\033[0m"
 	exit
 fi
 # Check to see if bookmark name has already been used
