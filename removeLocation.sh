@@ -4,7 +4,7 @@
 if [[ $# -ne 1 ]]; then
 	echo -e "\033[1;38;5;196mTakes only one argument, name for bookmark for the location to delete"
 	echo -e "eg. removeLocation.sh bookmarkName\033[0m"
-	exit
+	exit 1
 fi
 # Check to see if bookmark name has already been used
 check=$(egrep "^$1\>" $LOCBOOKHOME/.ohThePlacesIveBeen.txt)
@@ -16,4 +16,5 @@ if [ -n "$check" ]; then
 	fi
 else
 	echo -e "\033[1;38;5;69mNo bookmarked location saved as \033[1;38;5;196m$1\033[0m"
+	exit 1
 fi
